@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "InventoryList.Frontend",
+			"problemMatcher": [],
+			"label": "npm: start - InventoryList.Frontend",
+			"detail": "ng serve --proxy-config proxy.conf.json --open"
+		}
+	]
+}

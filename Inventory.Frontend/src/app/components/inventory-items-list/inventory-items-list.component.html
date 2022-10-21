@@ -1,0 +1,18 @@
+
+<h1>{{Title}}</h1>
+<div class="margin5">
+
+  
+ <app-inventory-item-form (updateSucc)="showMessage($event)"></app-inventory-item-form>
+
+ 
+  <div class="accordion-body">
+    <app-inventory-item-detail *ngFor="let inventoryList of InventoryAppService.allInventoryItems; let index = index;"  [item] = "inventoryList" (updateSucc)='showMessage($event)' ></app-inventory-item-detail>
+</div>
+
+<div *ngIf="showingMessage">
+  <h1>{{message}}</h1>
+</div>
+
+<!-- <ngb-toast header="I can be closed!" *ngIf="showToast" (hide)="showToast = false">
+  </ngb-toast> -->
